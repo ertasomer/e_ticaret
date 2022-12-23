@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>karşılatır</title>
+	<link rel="icon" href="resimler/site-map.png" type="image/x-icon" />
+</head>
+
+<body>
+<div id="arkaplan">
+  <video id="back" src="resimler/No Copyright Video, Copyright Free,  Motion Graphics, Background, Animation, Download.mp4" autoplay loop muted ></video>
+	<div id="grs">
+	<table width="268" >
+  <tbody>
+	  <tr>
+      <td width="160"></td>
+      <td width="144">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="160"><img class="resimler" src="resimler/television.png" width="128" height="128" alt=""/></td>
+      <td width="144" height="70px" ><img class="resim" src="resimler/iphone.png" width="128" height="128" alt=""/></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td >&nbsp;</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	</div>
+	<style type="text/css">
+		body {padding: 0; margin: 0;}
+		#back {
+			
+			height: 100vh;
+			width: 100%;
+			background-position: absolute;
+			z-index: 1;
+			object-fit: cover;
+		}
+		#grs{
+			height: 100%;
+			width: 100%;
+			z-index: 2;
+			position: absolute;
+			top: 0;
+			left: 0;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+		}
+		
+		.resim{cursor: pointer;}
+		.resimler{cursor: pointer;}
+		.resim:hover{width: 150px}
+		.resimler:hover{width: 150px}
+		
+		
+	</style>
+	<script>
+	document.querySelector(".resimler").onclick=function()
+	{
+		window.location.href=("televizyon.html")
+	}
+	
+	document.querySelector(".resim").onclick=function()
+	{
+		window.location.href=("telefon.html")
+	}
+	</script>
+</body>
+</html>
